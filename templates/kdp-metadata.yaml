@@ -1,0 +1,31 @@
+# KDP metadata draft — <title>
+#
+# Copy to <repo>/metadata/kdp.yaml and fill in for one book.
+# Limits checked by skills/kdp-metadata-preparer/SKILL.md:
+#   title/subtitle <= 200 chars, description <= 4000 chars,
+#   exactly 7 keyword phrases, each <= 50 chars.
+# Allowed description HTML: <b> <i> <br> <h4>-<h6> <ul> <ol> <li>. No links.
+
+title: <title as it should appear on Amazon>
+subtitle: <optional but recommended>
+author: <pen name as published>
+series_name: <if part of a series; else omit>
+series_number: <1, 2, ...; omit if standalone>
+language: <e.g. English>
+publication_date: <yyyy-mm-dd>  # [check] if not final
+adult_content: no
+trim_size: <paperback trim, e.g. 5x8 in>  # optional; paperback wizard shows final
+keywords:
+  - phrase: <keyword slot 1>
+    reason: <one-line justification the author can veto>
+    length: <count chars; the preparer computes this>
+book_description: |
+  <b>Hook.</b><br><br>
+  <two short paragraphs; the first ~110 words must carry the whole pitch>
+  <i>Series/standalone sign-off.</i>
+categories:
+  - suggestion: <browse-path suggestion 1>
+  - suggestion: <browse-path suggestion 2>
+  - note: final picks happen on the KDP site
+pricing:
+  note: stub only — verify tier math on the KDP site; never store prices here
